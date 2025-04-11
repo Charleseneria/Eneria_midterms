@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Presence Enhancement Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      .header-top ul,
+      .header-bottom nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      .product-table {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <a href="index.html"><img src="img/html5.png" width="75" height="75" alt="HTML5 Logo"></a>
+        <h2><a href="index.html" style="color: rgb(94, 94, 94);">Web Presence Enhancement Project</a></h2>
+        <ul>
+          <li><i class="fas fa-envelope"></i> E-commerce@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> #000 Plaza, San Pablo City</li>
+          <li><i class="fas fa-phone"></i> (+63)012 345 6789</li>
+        </ul>
+      </div>
+
+      <div class="header-bottom">
+        <div class="toggle-menu" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="btn-53">
+          <div class="original">Shop Now</div>
+          <div class="letters">
+            <span>C</span><span>L</span><span>I</span><span>C</span><span>K</span>
+          </div>
+        </button>       
+      </div>
+    </div>
+  </header>
+
+  <script>
+    function toggleNav() {
+      document.querySelector('.header-nav').classList.toggle('open');
+    }
+  </script>
+  
+  <section class="banner">
+    <div class="container banner-content">
+      <h1>Our Products</h1>
+      <p>High quality. Affordable. Delivered fast.</p>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <br><br>
+        <div class="product-table">
+            <div class="product-card">
+                <img src="img/phone.jpg" alt="Product 1" class="product-image">
+                <div class="product-info">
+                    <h3>Phone</h3>
+                    <p class="product-description">"Experience next-level connectivity with [Phone Model Name]. Boasting a sleek design, powerful performance, and exceptional camera quality, this smartphone is your ultimate companion for productivity and entertainment. Stay ahead with cutting-edge technology and features tailored to your lifestyle."</p>
+                    <a href="product1.html" class="view-button">View</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="img/watch.jpg" alt="Product 2" class="product-image">
+                <div class="product-info">
+                    <h3>Watch</h3>
+                    <p class="product-description">"Stay stylish and connected with [Watch Model Name]. Featuring a sleek design, advanced health tracking, and seamless smartphone integration, this smartwatch is perfect for your active lifestyle. Elevate your everyday with cutting-edge technology and timeless elegance."</p>
+                    <a href="product2.html" class="view-button">View</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/rubbershoes.jpg" alt="Product 3" class="product-image">
+                <div class="product-info">
+                    <h3>Rubbershoes</h3>
+                    <p class="product-description">"Step up your game with [Shoe Model Name]. Designed for comfort and durability, these rubber shoes provide excellent grip and support, whether you're hitting the gym or strolling the streets. Perfect for those who value performance and style in every step."</p>
+                    <a href="product3.html" class="view-button">View</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/blackshoes.jpg" alt="Product 4" class="product-image">
+                <div class="product-info">
+                    <h3>blackshoes</h3>
+                    <p class="product-description">"Elevate your style with [Shoe Model Name]. These black shoes offer a perfect blend of sophistication and comfort, making them ideal for both formal events and everyday wear. Crafted with premium materials, they ensure durability and timeless elegance in every step.</p>
+                    <a href="product4.html" class="view-button">View</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/keyboard.jpg" alt="Product 5" class="product-image">
+                <div class="product-info">
+                    <h3>Keyboard</h3>
+                    <p class="product-description">"Upgrade your typing experience with [Keyboard Model Name]. Designed for precision and comfort, this keyboard features responsive keys, durable construction, and a sleek design. Perfect for work, gaming, or everyday use, it’s a reliable companion for all your tasks."</p>
+                    <a href="product5.html" class="view-button">View</a>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="img/mouse.jpg" alt="Product 6" class="product-image">
+                <div class="product-info">
+                    <h3>Mouse</h3>
+                    <p class="product-description">"Enhance your precision and performance with [Mouse Model Name]. Designed for comfort and responsiveness, this computer mouse offers smooth navigation, ergonomic design, and reliable durability. Perfect for work, gaming, or everyday use, it’s a seamless companion for your digital tasks."</p>
+                    <a href="product6.html" class="view-button">View</a>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="img/tv.jpg" alt="Product 7" class="product-image">
+                <div class="product-info">
+                    <h3>Television</h3>
+                    <p class="product-description">"Transform your entertainment experience with [TV Model Name]. Featuring vibrant picture quality, immersive sound, and smart functionality, this TV is perfect for streaming, gaming, and watching your favorite shows. Sleek and modern, it’s designed to elevate your home viewing to a whole new level."</p>
+                    <a href="product7.html" class="view-button">View</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/laptop.jpg" alt="Product 8" class="product-image">
+                <div class="product-info">
+                    <h3>Laptop</h3>
+                    <p class="product-description">"Power your productivity with [Laptop Model Name]. Combining sleek design, powerful performance, and long-lasting battery life, this laptop is perfect for work, creativity, and entertainment. Stay efficient and connected wherever you go with cutting-edge technology at your fingertips."</p>
+                    <a href="product8.html" class="view-button">View</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/necklace.jpg" alt="Product 9" class="product-image">
+                <div class="product-info">
+                    <h3>Necklace</h3>
+                    <p class="product-description">"Add a touch of elegance to your look with [Necklace Model Name]. Beautifully crafted with premium materials, this necklace combines timeless design with modern sophistication. Perfect for any occasion, it’s a stunning accessory that complements your personal style."</p>
+                    <a href="product9.html" class="view-button">View</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/bracelet.jpg" alt="Product 10" class="product-image">
+                <div class="product-info">
+                    <h3>Bracelet</h3>
+                    <p class="product-description">"Enhance your style with [Bracelet Model Name]. This beautifully crafted bracelet combines elegance and durability, making it a perfect accessory for any occasion. Designed to complement your look, it’s a timeless piece you’ll cherish forever."</p>
+                    <a href="product10.html" class="view-button">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-action">
+            <h1 style="color: rgb(94, 94, 94);">Web Presence Enhancement Project</a></h1>
+            <a href="products.html">Shop Now</a>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-box">
+                <h4>Follow Us</h4>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-viber"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>How to order</h4>
+                <ul>
+                    <li><a href="#">View Items</a></li>
+                    <li><a href="#">COD</a></li>
+                    <li><a href="#">Multi-Delivery</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>Promotions</h4>
+                <ul>
+                    <li><a href="#">Gifts</a></li>
+                    <li><a href="#">Promos</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Investor</a></li>
+                    <li><a href="#">Franchising</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#"> Group Foundation</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Rate Our Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>About Our Website</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="container">
+      <p>&copy; 2025 E-Commerce Corporation. All rights reserved.</p>
+    </div>
+  </div>
+  <script>
+    function toggleNav() {
+      document.querySelector('.header-nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
